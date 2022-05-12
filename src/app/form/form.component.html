@@ -1,0 +1,7 @@
+<form [formGroup]="oFormAddUsr" (submit)="fnAddUsr()">
+  <label for="name">Name</label>
+  <input id="name" required formControlName="name" />
+  <label for="name">Bithday</label>
+  <input id="bithday"  formControlName="birth_year" />
+  <button [disabled]="!oFormAddUsr.valid" type="submit">добавить</button>
+</form>
